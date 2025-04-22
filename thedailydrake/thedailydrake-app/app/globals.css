@@ -43,7 +43,8 @@ body {
 
 /* Button */
 .button-container {
-  margin-top: 19rem;
+  margin-top: 17rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -110,4 +111,12 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.share-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
