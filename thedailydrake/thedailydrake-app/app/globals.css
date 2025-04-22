@@ -32,7 +32,7 @@ body {
   font-weight: bold;
   color: #ffd700; /* gold */
   margin-bottom: 0.25rem; /* <-- reduce this */
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .title-subtext {
@@ -103,7 +103,7 @@ body {
   border-radius: 12px;
   color: #fff;
   font-size: 1.5rem;
-  max-width: 800px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   animation: fadeIn 0.5s ease-in-out;
@@ -126,4 +126,13 @@ body {
   gap: 12px;
   margin-top: 1rem;
   flex-wrap: wrap;
+}
+
+.share-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
