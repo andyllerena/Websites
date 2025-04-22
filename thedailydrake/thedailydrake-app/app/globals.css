@@ -43,10 +43,17 @@ body {
 
 /* Button */
 .button-container {
-  margin-top: 17rem;
+  margin-top: 5rem; /* mobile default */
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
+}
+
+/* Keep your original look for laptop and up */
+@media (min-width: 1024px) {
+  .button-container {
+    margin-top: 17rem;
+  }
 }
 
 .button {
