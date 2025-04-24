@@ -47,7 +47,7 @@ export default function Home() {
             <p>
               <p>
                 This site uses AI to generate Drake-inspired captions from real
-                lyrics. Whether you&apos;re looking for motivation, bars, or a
+                lyrics. Whether you are looking for motivation, bars, or a
                 perfect IG caption, we got you.
               </p>
             </p>
