@@ -10,6 +10,7 @@ import {
   WhatsappShareButton,
   WhatsappIcon,
 } from "react-share";
+import Image from "next/image";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -44,9 +45,11 @@ export default function Home() {
           <div className="modal">
             <h2>Welcome to The Daily Drake</h2>
             <p>
-              {`This site uses AI to generate Drake-inspired captions from real
-              lyrics. Whether you're looking for motivation, bars, or a perfect
-              IG caption, we got you.`}
+              <p>
+                This site uses AI to generate Drake-inspired captions from real
+                lyrics. Whether you&apos;re looking for motivation, bars, or a
+                perfect IG caption, we got you.
+              </p>
             </p>
             <button onClick={() => setShowIntro(false)}>Let's Go</button>
           </div>
@@ -70,11 +73,12 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginLeft: "8px" }}
             >
-              <img
+              <Image
                 src="/icons/icons8-imessage.svg"
                 alt="iMessage"
                 width={45}
                 height={45}
+                style={{ borderRadius: "50%" }}
               />
             </a>
             <FacebookShareButton url={shareUrl} quote={titleToShare}>
