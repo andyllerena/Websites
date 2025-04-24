@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -14,9 +14,14 @@ import {
 export default function Home() {
   const [loading, setLoading] = useState(false);
   const [quote, setQuote] = useState("");
+  const [showIntro, setShowIntro] = useState(false);
 
   const shareUrl = "https://thedailydrake.vercel.app/"; // Replace with your actual site URL
   const titleToShare = `Got my daily drake "${quote}"`;
+
+  useEffect(() => {
+    setShowIntro(true);
+  }, []);
 
   const handleClick = async () => {
     setLoading(true);
@@ -34,10 +39,21 @@ export default function Home() {
 
   return (
     <div className="container">
+      {showIntro && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h2>Welcome to The Daily Drake</h2>
+            <p>
+              This site uses AI to generate Drake-inspired captions from real
+              lyrics. Whether you're looking for motivation, bars, or a perfect
+              IG caption, we got you.
+            </p>
+            <button onClick={() => setShowIntro(false)}>Let's Go</button>
+          </div>
+        </div>
+      )}
       <h1 className="title-text">The Daily Drake</h1>
-      <h2 className="title-subtext">
-        Drake lyrics made for your next caption.
-      </h2>
+      <h2 className="title-subtext">Drake lyrics made for your next caption</h2>
 
       {loading && <div className="spinner" />}
 
