@@ -44,9 +44,9 @@ export default function Home() {
           <div className="modal">
             <h2>Welcome to The Daily Drake</h2>
             <p>
-              This site uses AI to generate Drake-inspired captions from real
+              {`This site uses AI to generate Drake-inspired captions from real
               lyrics. Whether you're looking for motivation, bars, or a perfect
-              IG caption, we got you.
+              IG caption, we got you.`}
             </p>
             <button onClick={() => setShowIntro(false)}>Let's Go</button>
           </div>
