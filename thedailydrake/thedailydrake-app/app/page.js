@@ -51,7 +51,7 @@ export default function Home() {
                 perfect IG caption, we got you.
               </p>
             </p>
-            <button onClick={() => setShowIntro(false)}>Let's Go</button>
+            <button onClick={() => setShowIntro(false)}>Let's Go!</button>
           </div>
         </div>
       )}
